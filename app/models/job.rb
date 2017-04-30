@@ -1,5 +1,5 @@
 class Job < ApplicationRecord
-  class Job < ApplicationRecord
+  #class Job < ApplicationRecord
   def publish!
     self.is_hidden = false
     self.save
@@ -11,7 +11,8 @@ class Job < ApplicationRecord
   end
 
  has_many :resumes
- end
+
+ #end
 # scope :published, -> { where(is_hidden: false) }
 # scope :recent, -> { order('created_at DESC') }
 #   validates :wage_upper_bound, presence: true
